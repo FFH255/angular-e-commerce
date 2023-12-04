@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { InputComponent } from './components/input.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputComponent } from './components/Input/input.component';
+import { ModalWindowComponent } from './components/ModalWindow/ModalWindow.component';
 @NgModule({
-  declarations: [InputComponent],
+  declarations: [InputComponent, ModalWindowComponent],
   imports: [ReactiveFormsModule, FormsModule],
-  exports: [InputComponent],
+  exports: [InputComponent, ModalWindowComponent],
 })
 export class SharedModule {}
