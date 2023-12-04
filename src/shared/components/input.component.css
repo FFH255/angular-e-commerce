@@ -1,0 +1,14 @@
+.input {
+  display: grid;
+  gap: .2rem;
+  align-items: center;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+input {
+  padding: .5rem;
+}

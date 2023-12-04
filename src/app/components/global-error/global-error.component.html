@@ -1,0 +1,4 @@
+<div [hidden]="!(errorService.isError$ | async)" >
+  <span>{{ errorService.errorMessage$ | async }}</span>
+  <button (click)="this.clearErrorMessage()" >clear</button>
+</div>

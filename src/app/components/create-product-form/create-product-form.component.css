@@ -1,0 +1,10 @@
+.product-form {
+  display: grid;
+  gap: 1rem;
+}
+
+button {
+  justify-self: center;
+  padding: .3rem .6rem;
+  width: min-content;
+}

@@ -1,0 +1,12 @@
+.product {
+  display: grid;
+  justify-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  gap: .7rem;
+  padding: .5rem;
+}
+
+.product > img {
+  width: 10rem;
+}

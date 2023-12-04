@@ -1,0 +1,28 @@
+<form [formGroup]="productForm" class="product-form">
+  <shared-input 
+    formControlName="title" 
+    lable="Название" 
+    type="text">
+  </shared-input>
+  <shared-input 
+    formControlName="description" 
+    lable="Описание" 
+    type="text">
+  </shared-input>
+  <shared-input 
+    formControlName="price" 
+    lable="Цена" 
+    type="number">
+  </shared-input>
+  <shared-input 
+    formControlName="category" 
+    lable="Категория" 
+    type="text">
+  </shared-input>
+  <shared-input 
+    formControlName="image" 
+    lable="Изображение" 
+    type="text">
+  </shared-input>
+  <button (click)="onSubmit()">Создать</button>
+</form>

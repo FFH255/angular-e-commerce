@@ -1,0 +1,13 @@
+main {
+  display: grid;
+  width: 50vw;
+  gap: 1rem;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+main > .loader {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
