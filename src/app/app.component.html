@@ -1,6 +1,12 @@
 <main>
   <app-global-error></app-global-error>
+  <button (click)="openExampleModal()">Open modal</button>
   <span class="loader" *ngIf="isLoading">Loading...</span>
   <app-create-product-form ></app-create-product-form>
   <app-product *ngFor="let product of products$ | async" [product]="product" ></app-product>
+  <shared-modal-window id="hello-world-modal">
+    <span>
+      Hello World
+    </span>
+  </shared-modal-window>
 </main>

@@ -1,4 +1,4 @@
-<div class="modal-window">
+<div [ngClass]="{'modal-window': true, 'modal-window-active': isOpened}">
   <div class="modal-window-body">
     <ng-content></ng-content>
   </div>

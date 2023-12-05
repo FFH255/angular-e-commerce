@@ -10,6 +10,7 @@ import { ErrorService } from 'src/core/services/error.service';
 import { CreateProductFormComponent } from './components/create-product-form/create-product-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/shared/shared.module';
+import { ModalService } from 'src/core/services/modal.service';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { SharedModule } from 'src/shared/shared.module';
     SharedModule,
   ],
   providers: [
+    ErrorService,
+    ModalService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ErrorInterceptorService,
       multi: true,
     },
-    ErrorService,
   ],
   bootstrap: [AppComponent],
 })
